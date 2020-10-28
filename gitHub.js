@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+
 
 
 fetch('https://api.github.com/users/lev-choubine')
@@ -14,12 +14,12 @@ fetch('https://api.github.com/users/lev-choubine')
         username: data.login,
         name: data.name
     }
-    console.log(levObj);
+   // console.log(levObj);
 
-    const newElement =document.createElement('p');
-    newElement.textContent = levObj.name;
+    // const newElement =document.createElement('p');
+    // newElement.textContent = levObj.name;
 
-    container.appendChild(newElement);
+    // container.appendChild(newElement);
 })
 .catch(error =>{
     console.log(error)
